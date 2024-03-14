@@ -1,3 +1,4 @@
+#Introduction to the game
 print("Enchanted Escape: Quest for Love")
 
 print("Welcome brave adventurer! Your mission is to rescue a princess from a castle. " 
@@ -7,19 +8,25 @@ print("Welcome brave adventurer! Your mission is to rescue a princess from a cas
       "or will you die trying? ")
 print("Your adventure begins now!")
 
+#First choice: Answering a ridlle.
 choice1 = input("As you approach, a mystical voice challenges you with a riddle: "
                 "I speak without a mouth and hear without ears. "
                 "I have no body, but I come alive with the wind what am I?\n"
                 'a) "fire" or b) "wind" \n').lower()
+#Handling the consequences of the first choice
 if choice1 == "wind":
-  
+
+#Second choice: Choosing a door
   choice2 = input("\nThe gates creak open, allowing you to enter. "
                   "Inside the castle, you come across a hallway with three doors. "
                   "Each door has a symbol: a key, a sword, and a crown. "
                   "You can only choose one. Which door will you open.\n"
                   'Type a) "key(curiosty)" b) "sword(strength)"'
                   ' \n').lower()
+      #Handling the consequences of the second choice
   if choice2 == "key(curiosty)":
+        
+        #Third choice: Facing the guardian
     choice3 = input("\nThe door swings open, revealing a hidden passage."
                     "As you reach the inner chamber, a fierce guardian stands "
                     "in your way. "
@@ -29,6 +36,8 @@ if choice1 == "wind":
                     "are pure. "
                     'Type a) "love and compassion" b) "quest for honor" '
                     'c) "destiny and adventure" \n').lower()
+        
+        #Handling the consequences of the third choice
     if choice3 == "love and compassion":
      print("\nThe guardian nods, moved by your sincerity and lets you pass.")
     elif choice3 == "quest for honor":
